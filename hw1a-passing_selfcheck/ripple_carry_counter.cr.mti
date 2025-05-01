@@ -1,0 +1,22 @@
+/home/vamsid/common/Desktop/ECE571_F24/hw1-vamsireddysup/hw1a-passing_selfcheck/ripple_carry_counter.sv {1 {vlog -work work -vopt -sv -stats=none /home/vamsid/common/Desktop/ECE571_F24/hw1-vamsireddysup/hw1a-passing_selfcheck/ripple_carry_counter.sv
+QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+-- Compiling module ripple_carry_counter
+
+Top level modules:
+	ripple_carry_counter
+
+} {} {}} /home/vamsid/common/Desktop/ECE571_F24/hw1-vamsireddysup/hw1a-passing_selfcheck/DFF.sv {1 {vlog -work work -vopt -sv -stats=none /home/vamsid/common/Desktop/ECE571_F24/hw1-vamsireddysup/hw1a-passing_selfcheck/DFF.sv
+QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+-- Compiling module DFF
+
+Top level modules:
+	DFF
+
+} {} {}} /home/vamsid/common/Desktop/ECE571_F24/hw1-vamsireddysup/hw1a-passing_selfcheck/TFF.sv {1 {vlog -work work -vopt -sv -stats=none /home/vamsid/common/Desktop/ECE571_F24/hw1-vamsireddysup/hw1a-passing_selfcheck/TFF.sv
+QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+-- Compiling module TFF
+
+Top level modules:
+	TFF
+
+} {} {}}
