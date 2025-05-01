@@ -1,0 +1,123 @@
+# Compile of hw2_1a.sv was successful.
+# Compile of hw2_1c.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vopt +acc hw2_1c -debugdb -o hw2_1c_opt
+# QuestaSim-64 vopt 2021.3_1 Compiler 2021.08 Aug 15 2021
+# Start time: 21:27:36 on Oct 20,2024
+# vopt -reportprogress 300 "+acc" hw2_1c -debugdb -o hw2_1c_opt 
+# 
+# Top level modules:
+# 	hw2_1c
+# 
+# Analyzing design...
+# -- Loading module hw2_1c
+# -- Loading module primitiveGate
+# -- Loading module contAssign
+# -- Loading module alwaysComb
+# Incremental compilation check found no design-units have changed.
+# Optimized design name is hw2_1c_opt
+# End time: 21:27:37 on Oct 20,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -debugdb hw2_1c_opt
+# vsim -debugdb hw2_1c_opt 
+# Start time: 21:27:41 on Oct 20,2024
+# ** Warning: License feature 'msimhdlsim' will expire in 11 days.
+# Loading sv_std.std
+# Loading work.hw2_1c(fast)
+# Loading work.primitiveGate(fast)
+# Loading work.contAssign(fast)
+# Loading work.alwaysComb(fast)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+add wave -position insertpoint sim:/hw2_1c/*
+run -all
+#                    0	en=0 b=1 a=0 Design_1=15 Design_2=15 Design_3=15
+#                   50	en=0 b=0 a=0 Design_1=15 Design_2=15 Design_3=15
+#                  150	en=1 b=0 a=1 Design_1=11 Design_2=11 Design_3=11
+#                  200	en=1 b=1 a=0 Design_1=13 Design_2=13 Design_3=13
+#                  250	en=1 b=0 a=0 Design_1=14 Design_2=14 Design_3=14
+#                  300	en=1 b=1 a=1 Design_1= 7 Design_2= 7 Design_3= 7
+#                  350	en=0 b=1 a=1 Design_1=15 Design_2=15 Design_3=15
+#                  450	en=0 b=0 a=1 Design_1=15 Design_2=15 Design_3=15
+#                  500	en=0 b=0 a=0 Design_1=15 Design_2=15 Design_3=15
+#                  550	en=0 b=1 a=0 Design_1=15 Design_2=15 Design_3=15
+#                  600	en=0 b=1 a=1 Design_1=15 Design_2=15 Design_3=15
+#                  650	en=1 b=0 a=0 Design_1=14 Design_2=14 Design_3=14
+#                  700	en=1 b=0 a=1 Design_1=11 Design_2=11 Design_3=11
+#                  800	en=0 b=1 a=0 Design_1=15 Design_2=15 Design_3=15
+#                  850	en=1 b=1 a=0 Design_1=13 Design_2=13 Design_3=13
+#                  900	en=1 b=1 a=1 Design_1= 7 Design_2= 7 Design_3= 7
+#                  950	en=0 b=1 a=1 Design_1=15 Design_2=15 Design_3=15
+#                 1000	en=0 b=0 a=0 Design_1=15 Design_2=15 Design_3=15
+#                 1100	en=1 b=0 a=1 Design_1=11 Design_2=11 Design_3=11
+#                 1150	en=0 b=1 a=0 Design_1=15 Design_2=15 Design_3=15
+#                 1200	en=0 b=1 a=1 Design_1=15 Design_2=15 Design_3=15
+#                 1250	en=0 b=1 a=0 Design_1=15 Design_2=15 Design_3=15
+#                 1300	en=0 b=0 a=1 Design_1=15 Design_2=15 Design_3=15
+#                 1350	en=1 b=0 a=1 Design_1=11 Design_2=11 Design_3=11
+#                 1400	en=1 b=0 a=0 Design_1=14 Design_2=14 Design_3=14
+#                 1450	en=0 b=1 a=1 Design_1=15 Design_2=15 Design_3=15
+#                 1500	en=0 b=1 a=0 Design_1=15 Design_2=15 Design_3=15
+#                 1550	en=0 b=0 a=1 Design_1=15 Design_2=15 Design_3=15
+#                 1600	en=1 b=1 a=0 Design_1=13 Design_2=13 Design_3=13
+#                 1700	en=1 b=0 a=1 Design_1=11 Design_2=11 Design_3=11
+#                 1750	en=1 b=1 a=0 Design_1=13 Design_2=13 Design_3=13
+#                 1800	en=0 b=0 a=0 Design_1=15 Design_2=15 Design_3=15
+#                 1850	en=1 b=0 a=0 Design_1=14 Design_2=14 Design_3=14
+#                 1900	en=0 b=0 a=1 Design_1=15 Design_2=15 Design_3=15
+#                 1950	en=1 b=1 a=1 Design_1= 7 Design_2= 7 Design_3= 7
+#                 2000	en=1 b=0 a=1 Design_1=11 Design_2=11 Design_3=11
+#                 2050	en=0 b=1 a=0 Design_1=15 Design_2=15 Design_3=15
+#                 2100	en=0 b=0 a=1 Design_1=15 Design_2=15 Design_3=15
+#                 2150	en=1 b=0 a=0 Design_1=14 Design_2=14 Design_3=14
+#                 2200	en=1 b=0 a=1 Design_1=11 Design_2=11 Design_3=11
+#                 2250	en=1 b=0 a=0 Design_1=14 Design_2=14 Design_3=14
+#                 2300	en=0 b=1 a=1 Design_1=15 Design_2=15 Design_3=15
+#                 2350	en=1 b=0 a=0 Design_1=14 Design_2=14 Design_3=14
+#                 2400	en=0 b=0 a=0 Design_1=15 Design_2=15 Design_3=15
+#                 2500	en=1 b=0 a=0 Design_1=14 Design_2=14 Design_3=14
+#                 2550	en=0 b=0 a=1 Design_1=15 Design_2=15 Design_3=15
+#                 2600	en=1 b=0 a=1 Design_1=11 Design_2=11 Design_3=11
+#                 2700	en=1 b=1 a=0 Design_1=13 Design_2=13 Design_3=13
+#                 2750	en=0 b=0 a=1 Design_1=15 Design_2=15 Design_3=15
+#                 2800	en=0 b=1 a=0 Design_1=15 Design_2=15 Design_3=15
+#                 2850	en=0 b=1 a=1 Design_1=15 Design_2=15 Design_3=15
+#                 2900	en=1 b=0 a=1 Design_1=11 Design_2=11 Design_3=11
+#                 2950	en=1 b=1 a=0 Design_1=13 Design_2=13 Design_3=13
+#                 3000	en=1 b=0 a=1 Design_1=11 Design_2=11 Design_3=11
+#                 3050	en=1 b=1 a=0 Design_1=13 Design_2=13 Design_3=13
+#                 3100	en=0 b=0 a=0 Design_1=15 Design_2=15 Design_3=15
+#                 3150	en=1 b=1 a=1 Design_1= 7 Design_2= 7 Design_3= 7
+#                 3250	en=0 b=1 a=1 Design_1=15 Design_2=15 Design_3=15
+#                 3300	en=1 b=0 a=1 Design_1=11 Design_2=11 Design_3=11
+#                 3350	en=0 b=0 a=0 Design_1=15 Design_2=15 Design_3=15
+#                 3400	en=0 b=0 a=1 Design_1=15 Design_2=15 Design_3=15
+#                 3450	en=1 b=1 a=1 Design_1= 7 Design_2= 7 Design_3= 7
+#                 3500	en=0 b=0 a=0 Design_1=15 Design_2=15 Design_3=15
+#                 3550	en=1 b=0 a=0 Design_1=14 Design_2=14 Design_3=14
+#                 3750	en=0 b=0 a=1 Design_1=15 Design_2=15 Design_3=15
+#                 3800	en=0 b=1 a=1 Design_1=15 Design_2=15 Design_3=15
+#                 3850	en=0 b=1 a=0 Design_1=15 Design_2=15 Design_3=15
+#                 3900	en=1 b=0 a=0 Design_1=14 Design_2=14 Design_3=14
+#                 3950	en=0 b=1 a=1 Design_1=15 Design_2=15 Design_3=15
+#                 4000	en=1 b=1 a=1 Design_1= 7 Design_2= 7 Design_3= 7
+#                 4050	en=0 b=1 a=0 Design_1=15 Design_2=15 Design_3=15
+#                 4100	en=1 b=0 a=1 Design_1=11 Design_2=11 Design_3=11
+#                 4150	en=1 b=0 a=0 Design_1=14 Design_2=14 Design_3=14
+#                 4200	en=0 b=0 a=0 Design_1=15 Design_2=15 Design_3=15
+#                 4250	en=0 b=0 a=1 Design_1=15 Design_2=15 Design_3=15
+#                 4300	en=1 b=1 a=0 Design_1=13 Design_2=13 Design_3=13
+#                 4350	en=0 b=1 a=0 Design_1=15 Design_2=15 Design_3=15
+#                 4400	en=0 b=0 a=1 Design_1=15 Design_2=15 Design_3=15
+#                 4450	en=0 b=1 a=1 Design_1=15 Design_2=15 Design_3=15
+#                 4500	en=1 b=1 a=0 Design_1=13 Design_2=13 Design_3=13
+#                 4550	en=1 b=0 a=1 Design_1=11 Design_2=11 Design_3=11
+#                 4600	en=1 b=0 a=0 Design_1=14 Design_2=14 Design_3=14
+#                 4650	en=1 b=1 a=1 Design_1= 7 Design_2= 7 Design_3= 7
+#                 4700	en=1 b=0 a=0 Design_1=14 Design_2=14 Design_3=14
+#                 4750	en=1 b=1 a=0 Design_1=13 Design_2=13 Design_3=13
+#                 4850	en=1 b=1 a=1 Design_1= 7 Design_2= 7 Design_3= 7
+#                 4900	en=1 b=0 a=1 Design_1=11 Design_2=11 Design_3=11
+#                 4950	en=0 b=0 a=0 Design_1=15 Design_2=15 Design_3=15
+# ** Note: $stop    : /home/vamsid/common/Desktop/ECE571_F24/hw2-vamsireddysup/hw2_1c/hw2_1c.sv(34)
+#    Time: 5 us  Iteration: 0  Instance: /hw2_1c
+# Break in Module hw2_1c at /home/vamsid/common/Desktop/ECE571_F24/hw2-vamsireddysup/hw2_1c/hw2_1c.sv line 34
