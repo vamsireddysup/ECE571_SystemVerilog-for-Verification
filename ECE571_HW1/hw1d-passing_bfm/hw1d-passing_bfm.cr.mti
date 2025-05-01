@@ -1,0 +1,31 @@
+/home/vamsid/common/Desktop/ECE571_F24/hw1-vamsireddysup/hw1d-passing_bfm/stimulus.sv {2 {vlog -work work -vopt -sv -stats=none /home/vamsid/common/Desktop/ECE571_F24/hw1-vamsireddysup/hw1d-passing_bfm/stimulus.sv
+QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+-- Compiling module stimulus
+-- Compiling module stimulus
+** Warning: /home/vamsid/common/Desktop/ECE571_F24/hw1-vamsireddysup/hw1d-passing_bfm/stimulus.sv(59): (vlog-2275) Existing module 'stimulus' at line 4 will be overwritten.
+
+Top level modules:
+	stimulus
+
+} {} {}} /home/vamsid/common/Desktop/ECE571_F24/hw1-vamsireddysup/hw1d-passing_bfm/ripple_carry_counter.sv {1 {vlog -work work -vopt -sv -stats=none /home/vamsid/common/Desktop/ECE571_F24/hw1-vamsireddysup/hw1d-passing_bfm/ripple_carry_counter.sv
+QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+-- Compiling module ripple_carry_counter
+
+Top level modules:
+	ripple_carry_counter
+
+} {} {}} /home/vamsid/common/Desktop/ECE571_F24/hw1-vamsireddysup/hw1d-passing_bfm/TFF.sv {1 {vlog -work work -vopt -sv -stats=none /home/vamsid/common/Desktop/ECE571_F24/hw1-vamsireddysup/hw1d-passing_bfm/TFF.sv
+QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+-- Compiling module TFF
+
+Top level modules:
+	TFF
+
+} {} {}} /home/vamsid/common/Desktop/ECE571_F24/hw1-vamsireddysup/hw1d-passing_bfm/DFF.sv {1 {vlog -work work -vopt -sv -stats=none /home/vamsid/common/Desktop/ECE571_F24/hw1-vamsireddysup/hw1d-passing_bfm/DFF.sv
+QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+-- Compiling module DFF
+
+Top level modules:
+	DFF
+
+} {} {}}
