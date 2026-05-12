@@ -1,0 +1,8 @@
+/home/vamsid/common/Desktop/ECE571_F24/hw1-vamsireddysup/hw1c-failing_bfm/stimulus.sv {1 {vlog -work work -vopt -sv -stats=none /home/vamsid/common/Desktop/ECE571_F24/hw1-vamsireddysup/hw1c-failing_bfm/stimulus.sv
+QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+-- Compiling module stimulus
+
+Top level modules:
+	stimulus
+
+} {} {}}

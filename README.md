@@ -1,22 +1,58 @@
-# Ripple Carry Counter – ECE 571 System Verilog For Verification Assignment
+# ECE571: SystemVerilog for Verification
 
-This repository contains multiple versions of a 4-bit Ripple Carry Counter using DFF- and TFF-based designs, implemented as part of ECE-571 at Portland State University.
+Course assignments and projects for ECE 571 — SystemVerilog for Verification, covering the complete SystemVerilog language for hardware verification from basic constructs to UVM fundamentals.
 
-## Description
-Each version uses Toggle Flip-Flops (TFFs) built from D Flip-Flops (DFFs) to create a ripple counter. The testbenches apply reset and simulate counting with expected output checks.
+## Repository Structure
 
-## Differences Between Versions
+```
+ece571_systemverilog-for-verification/
+├── hw1/          # Homework 1 — SV fundamentals and data types
+│   ├── hw1a-passing_selfcheck/   # Passing: self-check stimulus
+│   ├── hw1b-failing_targeted/    # Failing: targeted test vectors
+│   ├── hw1c-failing_bfm/         # Failing: bus functional model
+│   └── hw1d-passing_bfm/         # Passing: bus functional model
+├── hw2/          # Homework 2 — Classes, constraints, and coverage
+│   ├── hw2_1a/   # Three design implementations (primitive, continuous, always_comb)
+│   ├── hw2_1b/   # Directed testbench comparing all 3 designs
+│   ├── hw2_1c/   # Randomized testbench comparing all 3 designs
+│   └── hw2_2/    # Bug-finding exercise
+└── README.md
+```
 
-- **Version 1**  
-  Standard ripple carry counter with full TFF chain (`q0 → q1 → q2 → q3`). Uses basic stimulus and manual error checking via `$display`.
+## Topics Covered
 
-- **Version 2**  
-  Breaks the TFF chain at `tff2` by feeding `1'b0` as its clock input. Tests reset behavior and validates output at fixed timestamps.
+### Homework 1 — SV Language Fundamentals
+- Packed and unpacked arrays, queues, associative arrays
+- `struct`, `union`, `enum` data types
+- Procedural blocks: `always_comb`, `always_ff`, `always_latch`
+- Interfaces, modports, and clocking blocks
+- Tasks and functions: `automatic`, `void`
 
-- **Version 3**  
-  Similar to Version 2 but introduces a behavioral model (`q_beh`) to track expected counts dynamically and compare with DUT output on each clock cycle.
+### Homework 2 — Object-Oriented Verification
+- Classes: constructors, inheritance, virtual methods
+- Randomization: `rand`, `randc`, constraint blocks
+- Functional coverage: covergroup, coverpoint, bins, cross
+- Inter-process communication: mailbox, semaphore, event
+- Program blocks and scheduling regions
 
-- **Version 4**  
-  Full TFF chain restored (`q0 → q1 → q2 → q3`) with behavioral model included. Stronger validation using continuous comparison of DUT and reference counter.
+## Simulation
 
-> All testbenches use asynchronous reset and simulate toggling over time to validate counter functionality.
+```bash
+# Compile with VCS
+vcs -sverilog hw1/<file>.sv -o simv
+./simv
+
+# Compile with QuestaSim
+vlog hw1/*.sv
+vsim -do "run -all" <tb_module>
+```
+
+## Tools
+
+- **Synopsys VCS** / **Mentor QuestaSim**: Simulation
+- **Synopsys Verdi**: Waveform debugging
+- **SystemVerilog IEEE 1800-2017**
+
+## Course Information
+
+Portland State University — ECE 571: SystemVerilog for Verification

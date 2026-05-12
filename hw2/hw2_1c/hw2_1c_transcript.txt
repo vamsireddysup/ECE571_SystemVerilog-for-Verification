@@ -1,0 +1,11 @@
+# Compile of hw2_1a.sv was successful.
+# Compile of hw2_1c.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vopt +acc hw2_1c -debugdb -o hw2_1c_opt
+# Errors: 0, Warnings: 0
+vsim -debugdb hw2_1c_opt
+add wave -position insertpoint sim:/hw2_1c/*
+run -all
+# (randomized 100 iterations - all designs matched)
+# ** Note: $stop    : hw2_1c.sv(34)
+#    Time: 5 us  Iteration: 0  Instance: /hw2_1c

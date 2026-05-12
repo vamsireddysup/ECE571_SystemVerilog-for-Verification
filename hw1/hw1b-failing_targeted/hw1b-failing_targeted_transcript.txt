@@ -1,0 +1,43 @@
+# Compile of DFF.sv was successful.
+# Compile of ripple_carry_counter.sv was successful.
+# Compile of stimulus.sv was successful.
+# Compile of TFF.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vopt +acc stimulus -o stimulus_opt
+# QuestaSim-64 vopt 2021.3_1 Compiler 2021.08 Aug 15 2021
+# Start time: 21:57:56 on Oct 11,2024
+# vopt -reportprogress 300 "+acc" stimulus -o stimulus_opt 
+# 
+# Top level modules:
+# 	stimulus
+# 
+# Analyzing design...
+# -- Loading module stimulus
+# -- Loading module ripple_carry_counter
+# -- Loading module TFF
+# -- Loading module DFF
+# Incremental compilation check found no design-units have changed.
+# Optimized design name is stimulus_opt
+# End time: 21:57:56 on Oct 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim stimulus_opt
+# vsim stimulus_opt 
+# Start time: 21:58:00 on Oct 11,2024
+# Loading sv_std.std
+# Loading work.stimulus(fast)
+# Loading work.ripple_carry_counter(fast)
+# Loading work.TFF(fast)
+# Loading work.DFF(fast)
+# Loading work.TFF(fast__1)
+# Loading work.DFF(fast__1)
+add wave -position insertpoint sim:/stimulus/*
+run -all
+#                    0 Output q =  0
+#                   20 Output q =  1
+#                   30 Output q =  2
+#                   40 Output q =  3
+#                   50 Output q =  0
+# ERROR at:                  115 count is 0010 should be 4'b1010
+# ERROR at:                  325 count is 0000 should be 4'b0100
+# ** Note: $stop    : stimulus.sv(43)
+#    Time: 355 ns  Iteration: 0  Instance: /stimulus

@@ -1,0 +1,16 @@
+# Compile of DFF.sv was successful.
+# Compile of ripple_carry_counter.sv was successful.
+# Compile of TFF.sv was successful.
+# Compile of stimulus.sv was successful with warnings.
+# 4 compiles, 0 failed with no errors.
+vopt +acc stimulus -o stimulus_opt
+# Errors: 0, Warnings: 0
+vsim stimulus_opt
+add wave -position insertpoint sim:/stimulus/*
+run -all
+# Starting Simulation
+#                    0 Output q =  0 q_beh =  0
+#                   20 Output q =  1 q_beh =  1
+#                  355 ns Output q =  2 q_beh =  2
+# ** Note: $stop    : stimulus.sv(97)
+#    Time: 355 ns  Iteration: 0  Instance: /stimulus
