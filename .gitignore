@@ -1,0 +1,7 @@
+work/
+*.log
+transcript
+vsim.wlf
+simv
+simv.daidir/
+*.swp

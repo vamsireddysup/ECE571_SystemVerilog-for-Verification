@@ -1,0 +1,18 @@
+# Compile of hw2_1a.sv was successful.
+# Compile of hw2_1b.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vopt +acc hw2_1b -debugdb -o hw2_1b_opt
+# Errors: 0, Warnings: 0
+vsim -debugdb hw2_1b_opt
+add wave -position insertpoint sim:/hw2_1b/*
+run -all
+#                    0	en=0 b=0 a=0 Design_1=15 Design_2=15 Design_3=15
+#                   50	en=0 b=0 a=1 Design_1=15 Design_2=15 Design_3=15
+#                  100	en=0 b=1 a=0 Design_1=15 Design_2=15 Design_3=15
+#                  150	en=0 b=1 a=1 Design_1=15 Design_2=15 Design_3=15
+#                  200	en=1 b=0 a=0 Design_1=14 Design_2=14 Design_3=14
+#                  250	en=1 b=0 a=1 Design_1=11 Design_2=11 Design_3=11
+#                  300	en=1 b=1 a=0 Design_1=13 Design_2=13 Design_3=13
+#                  350	en=1 b=1 a=1 Design_1= 7 Design_2= 7 Design_3= 7
+# ** Note: $stop    : hw2_1b.sv(34)
+#    Time: 400 ns  Iteration: 0  Instance: /hw2_1b
